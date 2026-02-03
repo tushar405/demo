@@ -424,3 +424,95 @@ h1 {
   background:#000;
 }
 
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .links {
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+  }
+
+  .container,
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+ 
+  .exchange,
+  .exchange-box {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+  }
+
+
+  .trades {
+    width: 100%;
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  
+  .right input,
+  .withdraw input {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .right button,
+  .last .withdraw-btn,
+  .transfer-btn {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .wallet-title {
+    font-size: 22px;
+  }
+
+  .amount,
+  .reserve-amount {
+    font-size: 24px;
+  }
+
+  
+  .assets,
+  .assets-box {
+    grid-template-columns: 1fr;
+    font-size: 18px;
+  }
+
+  
+  .footer {
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+  }
+}
