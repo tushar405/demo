@@ -14,20 +14,22 @@
   
   <header>
     <div class="nav">
-      <h1>Header</h1>
+    <img class="logo" src="logo.png" alt="logo">
       <div class="links">
-        <a>Home</a>
-        <a>Trade</a>
-        <a>Account</a>
-        <a>Support</a>
+        <a href="#">Home</a>
+        <a href="#" id="trade">Trade</a>
+        <a href="#">Account</a>
+        <a href="#">Support</a>
       </div>
     </div>
   </header>
 
  
+
+ 
   <div class="container">
-    <div class="left">
-      <div class="exchange">
+    <div class="left" style="background: none;">
+      <div class="exchange" style="background: none;">
         <h2>Live exchange screen</h2>
       </div>
 
@@ -39,7 +41,9 @@
       </div>
     </div>
 
-    <div class="right">
+    <div class="right" 
+                             
+ >
       <h2>Account</h2>
       <input type="text" placeholder="Username">
       <input type="password" placeholder="Password">
@@ -62,13 +66,13 @@
 <div id="withdrawpage" style="display:none;">
 
 
-  <div class="header">HEADER</div>
+  <div class="header"><img src="logo.png" class="logo" alt="logo"></div>
 
 
   <div class="container">
 
-    <div class="left">
-      <div class="exchange">Live exchange screen</div>
+    <div class="left"  style="background: none;">
+      <div class="exchange"  style="background: none;">Live exchange screen</div>
 
       <h2>Total Assets</h2>
       <div class="assets">
@@ -100,21 +104,21 @@
 
 
 <!--  LAST PAGE -->
-<div class="last" style="display:none">
+<div class="last" style="display:none" >
 
 
   <header class="header">
-    <h1>HEADER</h1>
+    <h1><img src="logo.png" src="logo" class="logo" alt="logo"></h1>
   </header>
 
   
   <div class="main">
 
     
-    <div class="left">
+    <div class="left"  style="background: none;">
 
       
-      <div class="exchange-box">
+      <div class="exchange-box"  style="background: none;">
         <h2>Live exchange screen</h2>
       </div>
 
@@ -168,10 +172,19 @@
 
 </div>
 
+ <div class="tradework" style="display:none">
+
+    <h2>Trading</h2>
+    <p class="whilefetch" style="display:none">fetching...</p>
+
+    <canvas id="livetrade"></canvas> 
+
+  </div>
 
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
