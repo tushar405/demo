@@ -94,3 +94,63 @@ async function drawChart(canvasId) {
 document.addEventListener("DOMContentLoaded", () => {
   drawChart("homeTrade");
 });
+
+
+const foreignLink = document.getElementById("foreignLink");
+const currencyLink = document.getElementById("currencyLink");
+const cryptoLink = document.getElementById("cryptoLink");
+const mcxLink = document.getElementById("mcxLink");
+
+const foreignTradePage = document.getElementById("foreignTrade");
+const currencyTradePage = document.getElementById("currencyTrade");
+const cryptoTradePage = document.getElementById("cryptoTrade");
+const mcxTradePage = document.getElementById("mcxTrade");
+
+
+// FOREIGN
+foreignLink.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  loginPage.style.display = "none";
+  withdrawPage.style.display = "none";
+  lastPage.style.display = "none";
+  tradePage.style.display = "none";
+
+  foreignTradePage.style.display = "block";
+});
+
+// CURRENCY
+currencyLink.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  loginPage.style.display = "none";
+  withdrawPage.style.display = "none";
+  lastPage.style.display = "none";
+  tradePage.style.display = "none";
+
+  currencyTradePage.style.display = "block";
+});
+
+// CRYPTO
+cryptoLink.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  loginPage.style.display = "none";
+  withdrawPage.style.display = "none";
+  lastPage.style.display = "none";
+  tradePage.style.display = "none";
+
+  cryptoTradePage.style.display = "block";
+});
+
+// MCX
+mcxLink.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  loginPage.style.display = "none";
+  withdrawPage.style.display = "none";
+  lastPage.style.display = "none";
+  tradePage.style.display = "none";
+
+  mcxTradePage.style.display = "block";
+});

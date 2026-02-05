@@ -6,6 +6,7 @@
 }
 
 html, body{
+
   width:100%;
   min-height:100%;
   background:#000;  
@@ -793,4 +794,153 @@ color:white;
     width:120px;
   height:60px;
     object-fit: contain;
+}
+
+
+
+#foreignTrade {
+  min-height: 100vh;
+  
+background-color: grey;
+  color: white;
+  
+  
+  
+  line-height: 1.6;     /* text spacing */
+
+}
+
+
+#foreignTrade h2,
+#foreignTrade h3,
+#foreignTrade p,
+#foreignTrade li {
+  padding:8px 60px;   /* कम spacing */
+  margin:0;
+
+}
+
+#foreignTrade h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+#foreignTrade h3 {
+  font-size: 26px;
+
+  color: #00ff66;
+}
+
+#foreignTrade p {
+  
+  max-width: 800px;  /* line length control */
+  font-size: 18px;
+}
+
+#foreignTrade .warning {
+  margin-top: 25px;
+  padding: 15px 18px;
+  border-left: 5px solid #ff4d4d;
+  background: rgba(0,0,0,0.4);
+  border-radius: 6px;
+  max-width: 800px;
+}
+
+.trade-content {
+  min-height: 100vh;
+  
+background-color: grey;
+  color: white;
+ 
+  line-height: 1.7;
+}
+
+.trade-content h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.trade-content h3 {
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #00ff66;
+}
+
+.trade-content p {
+  margin-bottom: 18px;
+  max-width: 800px;
+  font-size: 18px;
+  padding:8px 60px;
+}
+
+.trade-content ul {
+  margin-bottom: 20px;
+  padding-left: 22px;
+   padding:8px 60px;
+}
+
+.trade-content h3 {
+  padding:8px 60px;
+}
+
+
+.trade-content h2 {
+  padding:8px 60px;
+}
+.trade-content li {
+  margin-bottom: 8px;
+  font-size: 18px;
+   padding:8px 60px;
+}
+
+.warning {
+  margin-top: 10px;
+  padding: 15px 18px;
+  border-left: 5px solid #ff4d4d;
+  background: rgba(0,0,0,0.4);
+  border-radius: 6px;
+  max-width: 800px;
+   padding:8px 60px;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+   padding:8px 60px;
+}
+
+
+/* footer ko normal karo */
+.footer h3,
+.footer h4,
+.footer p,
+.footer ul,
+.footer li {
+  padding:0 !important;
+  margin:0;
+}
+
+/* footer columns spacing */
+.footer-col {
+  padding:10px 20px;
+}
+
+/* footer list spacing */
+.footer-col li {
+  margin-bottom:6px;
+}
+
+.trade-content .header,
+.trade-content .nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;   /* left align */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* logo left side */
+.trade-content .logo {
+  margin-left: 10px;
 }
