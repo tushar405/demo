@@ -8,13 +8,12 @@
 </head>
 <body>
 
-<!--LOGIN PAGE-->
+
 <div id="loginpage">
 
-  
   <header>
     <div class="nav">
-    <img class="logo" src="logo.png" alt="logo">
+      <img class="logo" src="logo.png" alt="logo">
       <div class="links">
         <a href="#">Home</a>
         <a href="#" id="trade">Trade</a>
@@ -24,13 +23,11 @@
     </div>
   </header>
 
- 
-
- 
   <div class="container">
-    <div class="left" style="background: none;">
-      <div class="exchange" style="background: none;">
-        <h2>Live exchange screen</h2>
+    <div class="left" style="background:none;">
+      <div class="exchange" style="background:none;">
+        <h3>Live exchange screen</h3>
+        <canvas id="homeTrade"></canvas>
       </div>
 
       <div class="trades">
@@ -41,38 +38,77 @@
       </div>
     </div>
 
-    <div class="right" 
-                             
- >
-      <h2>Account</h2>
+    <div class="right">
+      <h1>Account</h1>
       <input type="text" placeholder="Username">
       <input type="password" placeholder="Password">
       <button class="btn">Log IN</button>
     </div>
   </div>
 
+  <footer class="footer">
+  <div class="footer-container">
 
- <footer class="footer">
-    FOOTER
-  </footer>
+    <div class="footer-col">
+      <h3>Forex Trading</h3>
+      <p>
+        Trade global currency pairs with real-time charts,
+        high liquidity and secure execution.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Markets</h4>
+      <ul>
+        <li>EUR / USD</li>
+        <li>GBP / USD</li>
+        <li>USD / JPY</li>
+        <li>AUD / USD</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Trading Tools</h4>
+      <ul>
+        <li>Live Forex Charts</li>
+        <li>Technical Indicators</li>
+        <li>Market Analysis</li>
+        <li>Risk Management</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li>24×7 Help Desk</li>
+        <li>Forex Education</li>
+        <li>Trading Guide</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Forex Trading Platform · All Rights Reserved
+  </div>
+</footer>
+
 
 </div>
 
 
-
-
-<!-- widthdraw page -->
-
 <div id="withdrawpage" style="display:none;">
 
-
-  <div class="header"><img src="logo.png" class="logo" alt="logo"></div>
-
+  <div class="header">
+    <img src="logo.png" class="logo" alt="logo">
+  </div>
 
   <div class="container">
-
-    <div class="left"  style="background: none;">
-      <div class="exchange"  style="background: none;">Live exchange screen</div>
+    <div class="left" style="background:none;">
+      <div class="exchange" style="background:none;">
+        <canvas id="withdrawTrade"></canvas>
+      </div>
 
       <h2>Total Assets</h2>
       <div class="assets">
@@ -90,99 +126,144 @@
       <input type="text" placeholder="AMOUNT">
       <button>TRANSFER</button>
     </div>
+  </div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Forex Trading</h3>
+      <p>
+        Trade global currency pairs with real-time charts,
+        high liquidity and secure execution.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Markets</h4>
+      <ul>
+        <li>EUR / USD</li>
+        <li>GBP / USD</li>
+        <li>USD / JPY</li>
+        <li>AUD / USD</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Trading Tools</h4>
+      <ul>
+        <li>Live Forex Charts</li>
+        <li>Technical Indicators</li>
+        <li>Market Analysis</li>
+        <li>Risk Management</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li>24×7 Help Desk</li>
+        <li>Forex Education</li>
+        <li>Trading Guide</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
 
   </div>
 
-  
-  <div class="footer">FOOTER</div>
+  <div class="footer-bottom">
+    © 2026 Forex Trading Platform · All Rights Reserved
+  </div>
+</footer>
 
 </div>
 
-
-
-
-
-
-<!--  LAST PAGE -->
-<div class="last" style="display:none" >
-
+<div class="last" style="display:none;">
 
   <header class="header">
-    <h1><img src="logo.png" src="logo" class="logo" alt="logo"></h1>
+    <img src="logo.png" class="logo" alt="logo">
   </header>
 
-  
   <div class="main">
-
-    
-    <div class="left"  style="background: none;">
-
-      
-      <div class="exchange-box"  style="background: none;">
-        <h2>Live exchange screen</h2>
+    <div class="left" style="background:none;">
+      <div class="exchange-box" style="background:none;">
+        <canvas id="lastTrade"></canvas>
       </div>
 
-     
       <h2 class="assets-title">Total Assets</h2>
-
       <div class="assets-box">
-        <div class="asset-row">
-          <span id="bold">Foreign Trade</span>
-          <span id="bolder">$20,000.00</span>
-        </div>
-
-        <div class="asset-row">
-          <span id="bold">Currency Trade</span>
-          <span id="bolder">£13,000.00</span>
-        </div>
-
-        <div class="asset-row">
-          <span id="bold">Crypto Trade</span>
-          <span id="bolder">$20,000.00</span>
-        </div>
-
-        <div class="asset-row">
-          <span id="bold">Mcx Trade</span>
-          <span id="bolder">£10,000.00</span>
-        </div>
+        <div><span>Foreign Trade</span> <span>$20,000</span></div>
+        <div><span>Currency Trade</span> <span>£13,000</span></div>
+        <div><span>Crypto Trade</span> <span>$20,000</span></div>
+        <div><span>Mcx Trade</span> <span>£10,000</span></div>
       </div>
-
     </div>
 
     <div class="right">
-
       <div class="wallet-title">Wallet Balance</div>
-
       <p class="amount">$2,90,000.00</p>
       <p class="amount">£1,49,000.00</p>
-
       <p class="reserve">Reserve</p>
       <p class="reserve-amount">$63,000.00</p>
-
       <button class="withdraw-btn">Withdraw</button>
+    </div>
+  </div>
 
+ <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Forex Trading</h3>
+      <p>
+        Trade global currency pairs with real-time charts,
+        high liquidity and secure execution.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Markets</h4>
+      <ul>
+        <li>EUR / USD</li>
+        <li>GBP / USD</li>
+        <li>USD / JPY</li>
+        <li>AUD / USD</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Trading Tools</h4>
+      <ul>
+        <li>Live Forex Charts</li>
+        <li>Technical Indicators</li>
+        <li>Market Analysis</li>
+        <li>Risk Management</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li>24×7 Help Desk</li>
+        <li>Forex Education</li>
+        <li>Trading Guide</li>
+        <li>Contact Us</li>
+      </ul>
     </div>
 
   </div>
 
-
-  <footer class="footer">
-    FOOTER
-  </footer>
+  <div class="footer-bottom">
+    © 2026 Forex Trading Platform · All Rights Reserved
+  </div>
+</footer>
 
 </div>
 
- <div class="tradework" style="display:none">
-
-    <h2>Trading</h2>
-    <p class="whilefetch" style="display:none">fetching...</p>
-
-    <canvas id="livetrade"></canvas> 
-
-  </div>
 
 
-
+<div class="tradework" style="display:none;">
+  <h2>Trading</h2>
+  <canvas id="livetrade"></canvas>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="index.js"></script>
